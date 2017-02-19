@@ -1,0 +1,12 @@
+body{
+	font-family: sans-serif;
+	font-size: 16px;
+}
+nav{
+	padding-top: 15px;
+}
+@media screen and (min-width: 1600px) {
+    .container {
+        max-width: (1600px - @grid-gutter-width);
+    }
+}
