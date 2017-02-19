@@ -15,7 +15,7 @@
 		<div class="w3-container w3-padding-top">
 			<div class="w3-row w3-center">
 				<div class="w3-threequarter" id="search">
-					<input class="w3-input w3-col s11" type="text" name="search" placeholder='Search for a song...' />
+					<input class="w3-input w3-col s11" type="text" placeholder='Search for a song...' />
 					<i class="im im-magnifier w3-col s1 w3-padding-top"></i>
 				</div>
 				<div class="w3-quarter w3-padding" id="profile_img">
@@ -25,6 +25,38 @@
 			</div>
 		</div>
 	</nav>
+	<div class="w3-bottom w3-black w3-padding-large">
+		<div class="w3-row w3-center">
+			<div class="w3-col m2 w3-padding-top">
+				<i class="im im-angle-left w3-padding"></i>
+				<i class="im im-play w3-padding" id="PPBtn"></i>
+				<i class="im im-angle-right w3-padding"></i>
+			</div>
+			<div class="w3-col m8">
+				<div class="w3-large w3-text-shadow">
+					<b>
+						A very long song name
+					</b>
+				</div>
+				<div>
+					<p class="w3-large" id="currentTime">00:00</p>
+					<input class="range-slider__range" type="range" value="0" id="seekSlider" />
+					<p class="w3-large" id="leftTime">00:00</p>
+				</div>
+			</div>
+			<div class="w3-col m2">
+				<div class="w3-row w3-padding-top">
+					<div class="w3-col m6 w3-padding-top">
+						<input class="range-slider__range" type="range" min="0" max="1" step="0.1" value="1" id="volumeSlider" />
+						<i class="im im-volume w3-padding" id="muteBtn"></i>
+					</div>
+					<div class="w3-col m6">
+						<img height="50px" src="./to.jpg" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
