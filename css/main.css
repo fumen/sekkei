@@ -1,3 +1,8 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+
 /* Top UI */
 .user_circle {
     border-radius: 50%;
@@ -13,11 +18,16 @@
 }
 #search {
     padding: 8px 0 8px 56px;
+    color: grey;
+    border: none;
 }
 #search_box {
     border: none;
     padding: 7px;
+    height: 45px;
+    font-size: 25px;
 }
+
 /* End of Top UI */
 
 /* Bottom UI */
@@ -113,3 +123,93 @@
     border: 0;
 }
 /* End Range Slider */
+
+/* Browse Section */
+
+#main_section{
+	margin-top:150px;
+
+
+}
+h7{
+	opacity: 0.5;
+	font-weight: 900;
+}
+h3{
+	opacity: 0.9;
+	font-weight: 900;
+	display: inline-block;
+}
+#station_btn{
+	margin-top: 10px;
+	background-color: orange;
+	padding: 7px;
+	padding-right: 13px;
+	padding-left: 13px;
+	border : none;
+	border-radius: 4px;
+	color: white;
+	transition: all 0.1s;
+}
+#station_btn:hover{
+	box-shadow: 0px 3px 2px lightgrey;
+	
+}
+#station_btn:active{
+	background-color: darkorange;
+
+}
+
+#main_section ul{
+	list-style: none;
+	padding: 0;
+}
+#main_section ul li{
+	margin-left: 0;
+	padding:0;
+}
+
+#main_section ul li a{
+	margin-left: 0;
+}
+
+#main_browse_content{
+	margin-top: 20px;
+}
+
+/* Song cards */
+
+.card_wrapper{
+	width:200px;
+	height:250px;
+	padding-top: 20px;
+	border-radius: 5px;
+	display: inline-block;
+	margin-right:10px;
+}
+.card_wrapper img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 150px;
+}
+.card_wrapper p{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 30px;
+	
+}
+p.song_title{
+	margin-top: 15px;
+	margin-bottom: 0;
+	
+	font-weight: 700;
+}
+p.artist_title{
+	margin:0;
+	opacity: 0.5;
+}
+.card_wrapper:hover{
+	background-color: #f7f7f7;
+	transition: all 0.1s
+}
