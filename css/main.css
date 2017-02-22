@@ -1,14 +1,11 @@
-<<<<<<< HEAD
 body{
 	font-family: 'Roboto', sans-serif;
 }
 
-
-=======
 i {
     cursor: pointer;
 }
->>>>>>> 15f7ca061be16492e30985d7522ea7a4d2d87d90
+
 /* Top UI */
 .user_circle {
     border-radius: 50%;
