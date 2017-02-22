@@ -20,7 +20,7 @@ i {
     float: left;
 }
 #search {
-    padding: 8px 0 8px 56px;
+    background-color: white;
     color: grey;
     border: none;
 }
