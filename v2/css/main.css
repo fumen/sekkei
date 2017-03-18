@@ -1,0 +1,109 @@
+
+body{
+
+	padding: 15px;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+
+}
+/* Top Header */
+.header{
+	position: fixed;
+	width: 1300px;
+	left: 50%;
+    transform: translate(-50%, 0);
+}
+.header h2{
+	width: 100px;
+	float:left;
+
+}
+.header .search_bar{
+	margin-left: 100px;
+	border: 2px solid lightblue;
+	border-radius : 3px;
+	padding: 5px;
+	width: 600px;
+	float:left;
+}
+.header .user{
+	margin : 0 auto;
+	float:right;
+	width: 100px;
+}
+input{
+	border: none;
+	height: 35px;
+	width: 550px;
+	font-size: 25px;
+}
+
+/* Main Container */
+.container{
+	width: 1300px;
+	padding-top: 100px;
+	margin: auto;
+}
+
+/* Play card*/
+
+.top_tracks .music_card{
+	width: 160px;
+	border: 1px solid lightgrey;
+	border-radius: 4px;
+	position: relative;
+	float: left;
+	margin-bottom: 50px;
+	margin-right: 15px;
+}
+/*.music_card .overlay{
+	
+	position: absolute;
+	background-color: grey;
+	padding: 0;
+	margin:0 auto;
+	
+	bottom: 0;
+	
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+
+}
+.music_card:hover .overlay{
+	opacity: 0.7;
+	transition: 0.3s all;
+}
+*/
+.side_nav{
+	width: 250px;
+	float: left;
+	padding: 10px;
+
+
+}
+
+
+.side_nav ul{
+	list-style: none;
+}
+
+
+.side_nav li{
+	
+}
+
+.side_nav a{
+	text-decoration: none;
+}
+
+.main_nav{
+	float:left;
+
+}
+
+.showcase{
+	padding-left: 10px;
+
+}
