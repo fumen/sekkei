@@ -94,7 +94,7 @@ i {
     bottom: 0;
     width: 100%;
     height: 100px;
-    background-color: hotpink;
+    background-color: rgb(255, 100, 124);
     display: flex;
     align-items: center;
 }
@@ -138,12 +138,12 @@ i {
 
 #shuffleBtn {
     float: left;
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 #repeatBtn {
     float: right;
-    padding-right: 20px;
+    padding-right: 40px;
 }
 
 #seekSlider {
@@ -164,6 +164,10 @@ i {
     font-size: 20px;
     font-weight: bold;
     padding-top: 20px;
+}
+
+#volumeSlider {
+    width: 100px;
 }
 
 /* Custom Style Ends Here */
