@@ -170,4 +170,10 @@ i {
     width: 100px;
 }
 
+@media screen and (max-width: 850px) {
+    #trackDetails {
+        width: 30%;
+    }
+}
+
 /* Custom Style Ends Here */
