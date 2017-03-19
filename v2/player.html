@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/Style.css">
+    <title>Media Player</title>
+</head>
+
+<body>
+    <div id="playerHolder">
+        <div id="trackDetails">
+            <img src="../to.jpg" alt="trackImage" id="trackImage" />
+            <div id="contentHolder">
+                <div id="trackName">
+                    Blank Space
+                </div>
+                <div id="artistName">
+                    Taylor Swift
+                </div>
+            </div>
+        </div>
+        <div id="controlsHolder">
+            <div id="mainControls">
+                <i class="fa fa-random" id="shuffleBtn"></i>
+                <i class="fa fa-backward" id="backBtn"></i>
+                <i class="fa fa-pause" id="ppBtn"></i>
+                <i class="fa fa-forward" id="forwarBtn"></i>
+                <i class="fa fa-repeat" id="repeatBtn"></i>
+            </div>
+            <div class="timer">00:00</div>
+            <input class="range-slider__range" type="range" min="0" max="1" step="0.1" value="1" id="seekSlider" />
+            <div class="timer">00:00</div>
+        </div>
+        <div id="volumeHolder">
+            <i class="fa fa-volume-up"></i>
+            <input class="range-slider__range" type="range" min="0" max="1" step="0.1" value="1" id="volumeSlider" />
+        </div>
+    </div>
+</body>
+
+</html>
