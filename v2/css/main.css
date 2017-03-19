@@ -1,7 +1,6 @@
 
 body{
 
-	padding: 15px;
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -17,15 +16,16 @@ body{
 /* Top Header */
 .header{
 	top:0;
+	left:20px;
 	position: fixed;
-	width: 1300px;
-	
+	width: 100%;
 	padding-top: 15px;
 	margin-bottom: 0;
 	padding-bottom: 0;
     /*transform: translate(-50%, 0);
     left: 50%;
-    */z-index: 999;
+    */
+    z-index: 999;
 }
 .header h2{
 	width: 100px;
@@ -35,52 +35,51 @@ body{
 	margin: 0;
 }
 
-.header .search_bar{
-	margin-left: 100px;	
-	padding: 5px;
+
+.search_bar{
+	margin-left: 240px;	
+	padding: 3px;
+	position: fixed;
 	width: 600px;
 	float:left;
-	color: white;
-}
-
-/*
-
-Not working check later 
-
-.search_bar .icon{
-	position: absolute;
-  	top: 50%;
-  	color: white;
-
-}
-
-*/
-
-input{
-	background: rgb(254, 175, 145); 
+	font-size: 20px;
+	
+  	background: rgb(254, 175, 145); 
 	border-radius : 20px;
 	border: none;
-	height: 35px;
-	width: 550px;
-	font-size: 25px;
-	color: white;	
+	height: 35px;	
 	padding-right:10px;
 	padding-left:20px;
+	display: flex;
+	align-items: center;
+}
+
+.icon {
+	opacity: 0.5;
+	padding-left: 10px;
+}
+ 
+input{
+	padding-left: 10px;
+	background: transparent;
+	width: 90%;
+	
+	border: none;
 }
 
 
 .header .user{
-	margin : 0 auto;
+	
 	float:right;
 	width: 100px;
+
 }
 
 
 /* Main Container */
 .container{
-	width: 1300px;
-	padding-left: 0;
-	padding-right: 0;
+	width: 1600px;
+	padding-left: 15px;
 	padding-top: 100px;
 	
 }
@@ -115,18 +114,24 @@ input{
 .top_tracks .music_card{
 	
 }
-
+.flowy{
+	width: 1300px;
+}
+.slick-slide {
+	width: 260px !important;
+}
 .card{
 	width: 200px;
-	
+	display: inline-block;
 	position: relative;
-	float: left;
-	margin-bottom: 50px;
+	
+	margin-bottom: 10px;
 	margin-right: 25px;
 
 }
 .card img{
-	width: 100%;
+	height: 260px;
+	width: auto;
 	border-radius: 5px;
 }
 .overlayx:hover{
@@ -162,7 +167,7 @@ input{
 	top:0;
 	left:0;
 	
-	height: 200px;
+	height: 260px;
 	width: 100%;
 	opacity:0;
 
@@ -172,7 +177,9 @@ input{
 	box-shadow: -60px 0px 100px -90px #000000, 60px 0px 100px -90px #000000;
 	transition: 0.3s all;
 }
-
+.top_artist{
+	margin-top: 25px;
+}
 .top_artist .card{
 	width: 230px;
 	margin-bottom: 40px;
@@ -182,11 +189,12 @@ input{
 
 .top_artist .card img{
 
-	width:100px;
 	border-radius: 2px;	
 	display: inline-block;
 	float: left;
 	padding-right: 20px;
+	width: 100px;
+	height: 100px;
 }
 
 .top_artist .card a{
