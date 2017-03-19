@@ -15,7 +15,7 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #2c3e50;
+    background: white;
     cursor: pointer;
     -webkit-transition: background .15s ease-in-out;
     transition: background .15s ease-in-out;
@@ -94,13 +94,14 @@ i {
     bottom: 0;
     width: 100%;
     height: 100px;
-    background-color: rgb(255, 100, 124);
+    background: linear-gradient(transparent 5%, rgb(255, 100, 124) 95%);
     display: flex;
     align-items: center;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 #trackDetails {
-    width: 20%;
+    width: 30%;
     height: 100%;
     text-align: center;
     float: left;
@@ -170,10 +171,10 @@ i {
     width: 100px;
 }
 
-@media screen and (max-width: 850px) {
+/* @media screen and (max-width: 850px) {
     #trackDetails {
         width: 30%;
     }
-}
+} */
 
 /* Custom Style Ends Here */
