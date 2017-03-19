@@ -5,93 +5,234 @@ body{
 	width: 100%;
 	height: 100%;
 	margin: 0;
-
+	font-family: 'Roboto', sans-serif;
+	background-color: rgb(254, 160, 124);
+	color :white;
+	font-weight: 400;
+	font-size: 16px;
+	background: linear-gradient(to top, rgb(255, 100, 124) , rgb(254, 161, 125));
 }
 /* Top Header */
 .header{
+	top:0;
 	position: fixed;
 	width: 1300px;
-	left: 50%;
-    transform: translate(-50%, 0);
+	
+	padding-top: 15px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+    /*transform: translate(-50%, 0);
+    left: 50%;
+    */z-index: 999;
 }
 .header h2{
 	width: 100px;
 	float:left;
-
+	margin-bottom: 0;
+	padding-top: 5px;
+	margin: 0;
 }
+
 .header .search_bar{
-	margin-left: 100px;
-	border: 2px solid lightblue;
-	border-radius : 3px;
+	margin-left: 100px;	
 	padding: 5px;
 	width: 600px;
 	float:left;
+	color: white;
 }
+
+/*
+
+Not working check later 
+
+.search_bar .icon{
+	position: absolute;
+  	top: 50%;
+  	color: white;
+
+}
+
+*/
+
+input{
+	background: rgb(254, 175, 145); 
+	border-radius : 20px;
+	border: none;
+	height: 35px;
+	width: 550px;
+	font-size: 25px;
+	color: white;	
+	padding-right:10px;
+	padding-left:20px;
+}
+
+
 .header .user{
 	margin : 0 auto;
 	float:right;
 	width: 100px;
 }
-input{
-	border: none;
-	height: 35px;
-	width: 550px;
-	font-size: 25px;
-}
+
 
 /* Main Container */
 .container{
 	width: 1300px;
+	padding-left: 0;
+	padding-right: 0;
 	padding-top: 100px;
-	margin: auto;
+	
 }
 
 /* Play card*/
+.container h2{
+	font-weight: 700;
+	font-size: 30px;
+	margin-top: 0;
+	text-shadow: 0 2px 2px rgba(0,0,0,0.15);
 
+}
+.showcase_nav{
+	width: 100%;
+	position: relative;
+}
+.showcase_nav ul{
+	list-style: none;
+	
+}
+
+.showcase_nav ul li{
+	display: inline-block;
+}
+.showcase_nav h1{
+	font-size: 90px;
+	font-weight: 900;
+	margin:0;
+	padding: 0;
+}
+.showcase_nav {}
 .top_tracks .music_card{
-	width: 160px;
-	border: 1px solid lightgrey;
-	border-radius: 4px;
+	
+}
+
+.card{
+	width: 200px;
+	
 	position: relative;
 	float: left;
 	margin-bottom: 50px;
-	margin-right: 15px;
+	margin-right: 25px;
 }
-/*.music_card .overlay{
+.card img{
+	width: 100%;
+	border-radius: 5px;
+}
+.card img:hover{
+	
+}
+.card p{
+	font-size: 20px;
+	margin-bottom:5px;
+	margin-top:10px;
+	padding: 0;
+	font-weight: 700;
+}
+.card a{
+	font-weight: 300;
+}
+.overlay{
 	
 	position: absolute;
-	background-color: grey;
-	padding: 0;
-	margin:0 auto;
+	background-color: black;
+	border-radius: 5px;
+	top:0;
+	left:0;
 	
-	bottom: 0;
-	
-	height: 100%;
+	height: 200px;
 	width: 100%;
-	opacity: 0;
+	opacity:0;
 
 }
-.music_card:hover .overlay{
-	opacity: 0.7;
+.overlay:hover{
+	opacity : 0.4;
+	box-shadow: -60px 0px 100px -90px #000000, 60px 0px 100px -90px #000000;
 	transition: 0.3s all;
 }
-*/
+
+.top_artist .card{
+	width: 230px;
+	margin-bottom: 40px;
+
+
+}
+
+.top_artist .card img{
+
+	width:100px;
+	border-radius: 2px;	
+	display: inline-block;
+	float: left;
+	padding-right: 20px;
+}
+
+.top_artist .card a{
+	display: block;
+	padding-left: 15px;
+	top:0;
+	margin-top:20px; 
+	font-weight: 700;
+	font-size: 20px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.top_artist .card .artist_genre{
+		margin:0; 
+		font-size: 15px;
+		font-weight: 300;
+		padding-top: 5px;
+
+}
+.top_artist .card .artist_genre:hover{
+	transition: 0.2s all;
+	text-decoration: underline;
+}
+
+/* Side Navigation : Still in progress ; */
+
 .side_nav{
 	width: 250px;
 	float: left;
-	padding: 10px;
-
+	margin: 0;
+	padding: 0;
+	height: 1000px;
+	font-size: 25px;
+	margin-left: 0;
+	padding-left: 0;
 
 }
+
 
 
 .side_nav ul{
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 
 .side_nav li{
+	padding: 5px;
+	padding-left: 0;
+	transition: 0.3s all;
 	
+	width:150px;
+	font-weight: 300;
+
+}
+
+.side_nav li:hover{
+	text-decoration: underline;
+
 }
 
 .side_nav a{
@@ -102,8 +243,11 @@ input{
 	float:left;
 
 }
-
-.showcase{
-	padding-left: 10px;
-
+a{
+	color: white;
+	text-decoration: none;
 }
+/*.showcase{
+	/*padding-left: 10px;
+
+}*/
