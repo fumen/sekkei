@@ -78,7 +78,7 @@ input{
 
 /* Main Container */
 .container{
-	width: 1600px;
+	width: 1300px;
 	padding-left: 15px;
 	padding-top: 100px;
 	
@@ -115,7 +115,7 @@ input{
 	
 }
 .flowy{
-	width: 1300px;
+	width: 1000px;
 }
 .slick-slide {
 	width: 260px !important;
