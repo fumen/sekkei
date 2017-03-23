@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./W3.css" />
+    <link rel="stylesheet" href="./Style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./slick.css" />
+    <link rel="stylesheet" href="./slick-theme.css" />
+    <script src="./jquery-3.1.1.js"></script>
+    <script src="./slick.min.js"></script>
+</head>
+
+<body>
+    <nav class="w3-bar w3-transparent w3-padding-large" id="navBar">
+        <div class="w3-large w3-quarter w3-text-shadow w3-text-white w3-xlarge w3-margin-top" id="openBtn">fumen</div>
+        <div class="w3-threequarter search_input_holder w3-margin-top">
+            <input type="text" class="w3-border-0 search_input w3-padding" placeholder="Search Tracks Here..." />
+            <i class="fa fa-search w3-large"></i>
+        </div>
+    </nav>
+    <div class="w3-dropdown-hover w3-transparent w3-quarter w3-center w3-margin-top" id="userHolder">
+        <img src="./to.jpg" alt="User Image" class="user_image" />
+        <div class="w3-dropdown-content w3-transparent w3-card-8">
+            <a href="#">Profile</a>
+            <a href="#">Favourites</a>
+            <a href="#">My Playlists</a>
+            <a href="#">Settings</a>
+        </div>
+    </div>
+
+    <div id="contentHolder">
+        <div class="w3-sidebar w3-bar-block w3-transparent w3-bar-block w3-collapse w3-animate-left" style="width: 200px;" id="sideBar">
+            <button class="w3-bar-item w3-button w3-hide-large" id="closeBtn">&times;</button>
+            <a href="#" class="w3-bar-item w3-button w3-text-shadow w3-large w3-text-white w3-margin-top">What's New</a>
+            <a href="#" class="w3-bar-item w3-button w3-text-shadow w3-large w3-text-white">Discover</a>
+            <a href="#" class="w3-bar-item w3-button w3-text-shadow w3-large w3-text-white">Playlists</a>
+            <a href="#" class="w3-bar-item w3-button w3-text-shadow w3-large w3-text-white">Library</a>
+        </div>
+
+        <div class="w3-main w3-container" style="margin-left: 200px;">
+            <div class="w3-text-shadow w3-text-white w3-col s11">
+                <b>
+                    <span class="w3-xxlarge">Trending Tracks:</span>
+                </b>
+                <div class="w3-margin-top">
+                    <div class="flowy">
+                        <div class="music_card card">
+                            <img src="https://img.discogs.com/YkojdSoRqJLaG0e1lNaihV-HOak=/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-9882982-1487908820-7837.jpeg.jpg"
+                                class="art">
+                            <p>La La Land</p>
+                            <a href="">Taylor Swift</a>
+                            <div class="overlay">
+                                <span><i class="fa fa-play-circle "></i> </span>
+                            </div>
+                        </div>
+                        <div class="music_card card">
+                            <img src="https://img.discogs.com/OXyW9wiicL3nRu5oa-z-aWrCWPE=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-8635620-1465622140-3453.jpeg.jpg"
+                                class="art">
+                            <p>Wrong Crowd</p>
+                            <a href="">Tom Odell</a>
+                            <div class="overlay">
+                                <span><i class="fa fa-play-circle "></i> </span>
+                            </div>
+                        </div>
+                        <div class="music_card card">
+                            <img src="https://img.discogs.com/9l2T56jHfMjraZ4fe-dDEuJ6phk=/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-7748058-1448134186-9791.jpeg.jpg"
+                                class="art">
+                            <p>The Fame</p>
+                            <a href="">Adele</a>
+                            <div class="overlay">
+                                <span><i class="fa fa-play-circle "></i> </span>
+                            </div>
+                        </div>
+                        <div class="music_card card">
+                            <img src="https://img.discogs.com/mOR71L7NLf9AR8z5CNqcitfIJsA=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-9955256-1489175861-1387.jpeg.jpg"
+                                class="art">
+                            <p>Heavy</p>
+                            <a href="">Linkin Park</a>
+                            <div class="overlay">
+                                <span><i class="fa fa-play-circle "></i> </span>
+                            </div>
+                        </div>
+
+                        <div class="music_card card">
+                            <img src="https://img.discogs.com/mOR71L7NLf9AR8z5CNqcitfIJsA=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-9955256-1489175861-1387.jpeg.jpg"
+                                class="art">
+                            <p>Heavy</p>
+                            <a href="">Linkin Park</a>
+                            <div class="overlay">
+                                <span><i class="fa fa-play-circle "></i> </span>
+                            </div>
+                        </div>
+
+                        <div class="music_card card">
+                            <img src="https://img.discogs.com/mOR71L7NLf9AR8z5CNqcitfIJsA=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-9955256-1489175861-1387.jpeg.jpg"
+                                class="art">
+                            <p>Heavy</p>
+                            <a href="">Linkin Park</a>
+                            <div class="overlay">
+                                <span><i class="fa fa-play-circle "></i> </span>
+                            </div>
+                        </div>
+
+                        <div class="music_card card">
+                            <img src="https://img.discogs.com/mOR71L7NLf9AR8z5CNqcitfIJsA=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-9955256-1489175861-1387.jpeg.jpg"
+                                class="art">
+                            <p>Heavy</p>
+                            <a href="">Linkin Park</a>
+                            <div class="overlay">
+                                <span><i class="fa fa-play-circle "></i> </span>
+                            </div>
+                        </div>
+
+                        <div class="music_card card">
+                            <img src="https://img.discogs.com/mOR71L7NLf9AR8z5CNqcitfIJsA=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-9955256-1489175861-1387.jpeg.jpg"
+                                class="art">
+                            <p>Heavy</p>
+                            <a href="">Linkin Park</a>
+                            <div class="overlay">
+                                <span><i class="fa fa-play-circle "></i> </span>
+                            </div>
+                        </div>
+
+                        <div class="music_card card">
+                            <img src="https://img.discogs.com/mOR71L7NLf9AR8z5CNqcitfIJsA=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-9955256-1489175861-1387.jpeg.jpg"
+                                class="art">
+                            <p>Heavy</p>
+                            <a href="">Linkin Park</a>
+                            <div class="overlay">
+                                <span><i class="fa fa-play-circle "></i> </span>
+                            </div>
+                        </div>
+
+                        <div class="music_card card">
+                            <img src="https://img.discogs.com/mOR71L7NLf9AR8z5CNqcitfIJsA=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-9955256-1489175861-1387.jpeg.jpg"
+                                class="art">
+                            <p>Heavy</p>
+                            <a href="">Linkin Park</a>
+                            <div class="overlay">
+                                <span><i class="fa fa-play-circle "></i> </span>
+                            </div>
+                        </div>
+
+                        <div class="music_card card">
+                            <img src="https://img.discogs.com/mOR71L7NLf9AR8z5CNqcitfIJsA=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-9955256-1489175861-1387.jpeg.jpg"
+                                class="art">
+                            <p>Heavy</p>
+                            <a href="">Linkin Park</a>
+                            <div class="overlay">
+                                <span><i class="fa fa-play-circle "></i> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-margin-top w3-text-shadow w3-text-white w3-col s11 top_artist">
+                <b>
+                    <span class="w3-xlarge">Top Artists:</span>
+                </b>
+                <div class="w3-cell-row w3-margin-top">
+                    <div class="artist_card card w3-cell">
+                        <img src="https://lastfm-img2.akamaized.net/i/u/avatar170s/b4ab6e862588662833d89ad8588c6f53.jpg" class="art">
+                        <a href="">Drake</a>
+                        <a class="artist_genre">Hip-Hop</a>
+                    </div>
+                    <div class="artist_card card w3-cell">
+                        <img src="https://lastfm-img2.akamaized.net/i/u/avatar170s/b4ab6e862588662833d89ad8588c6f53.jpg" class="art">
+                        <a href="">Taylor Swift</a>
+                        <a class="artist_genre">Hip-Hop</a>
+                    </div>
+                    <div class="artist_card card w3-cell">
+                        <img src="https://img.discogs.com/VbtSFkspIbvdWjbkYj26AEfKRxc=/100x100/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-6237864-1414525739-4203.jpeg.jpg"
+                            class="art">
+                        <a href="">Taylor Swift</a>
+                        <a class="artist_genre">Hip-Hop</a>
+                    </div>
+                </div>
+                <div class="w3-cell-row">
+                    <div class="artist_card card w3-cell">
+                        <img src="https://img.discogs.com/OLF1FYxvN5byyNpUC85me-_ZQ0Y=/300x300/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/A-21991-1483928038-5953.jpeg.jpg"
+                            class="art">
+                        <a href="">Sia</a>
+                        <a class="artist_genre">Hip-Hop</a>
+                    </div>
+                    <div class="artist_card card w3-cell">
+                        <img src="https://img.discogs.com/mHCZBQ6iOQ9dyY4IuZplpj5SstU=/100x100/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-4464095-1365602792-2486.jpeg.jpg"
+                            class="art">
+                        <a href="">Tom Odell</a>
+                        <a class="artist_genre">Pop</a>
+                    </div>
+                    <div class="artist_card card w3-cell">
+                        <img src="https://lastfm-img2.akamaized.net/i/u/avatar170s/b4ab6e862588662833d89ad8588c6f53.jpg" class="art">
+                        <a href="">Taylor Swift</a>
+                        <a class="artist_genre">Hip-Hop</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Script.js"></script>
+</body>
+
+</html>
