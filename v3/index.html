@@ -26,7 +26,7 @@
         }
         
         .grad-color {
-            background: linear-gradient(to top, rgb(255, 100, 124), rgb(254, 161, 125));
+            background: linear-gradient(to top, transparent, rgb(254, 161, 125));
             background-repeat: no-repeat;
         }
         
@@ -35,7 +35,7 @@
         }
         
         .base-style {
-            text-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+            text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
         }
         
         .fixed-width {
@@ -43,6 +43,46 @@
             height: 200px;
             margin: 0 7px;
         }
+        /* Start of media player CSS */
+        
+        #playerHolder {
+            background: linear-gradient(transparent 5%, rgb(255, 100, 124) 95%);
+            background-repeat: no-repeat;
+            position: fixed;
+            bottom: 0;
+            text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+            max-height: 100px;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+        
+        #playerHolder .row {
+            margin-bottom: 0;
+        }
+
+        #playerHolder input[type="range"]::-moz-range-thumb {
+            background: black;
+        }
+
+        #playerHolder input[type="range"]::-webkit-slider-thumb {
+            background: black;
+        }
+
+        #playerHolder input[type="range"]{
+            border: 0;
+        }
+        
+        .contol-buttons i {
+            cursor: pointer;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            #playerHolder {
+                max-height: 200px;
+            }
+        }
+        /* End of media player CSS */
     </style>
 </head>
 
@@ -104,7 +144,7 @@
                     <div class="card">
                         <div class="card-image">
                             <img src="./Images/TS.png">
-                            <span class="card-title">Taylpr Swift</span>
+                            <span class="card-title">Taylor Swift</span>
                         </div>
                     </div>
                 </div>
@@ -220,7 +260,7 @@
                     <div class="card">
                         <div class="card-image">
                             <img src="./Images/TS.png">
-                            <span class="card-title">Taylpr Swift</span>
+                            <span class="card-title">Taylor Swift</span>
                         </div>
                     </div>
                 </div>
@@ -324,6 +364,75 @@
         <!-- End of Top Albums -->
     </div>
     <!-- End of Main Recomendation Part -->
+
+    <!-- Start of Media Player -->
+    <div id="playerHolder">
+
+        <div class="row base-style white-text show-on-small hide-on-med-and-up" style="font-weight: bolder; font-size: 20px; text-align: center">
+            <div class="col s2">
+                00:00
+            </div>
+            <div class="col s8 range-field">
+                <input type="range">
+            </div>
+            <div class="col s2">
+                00:00
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col m2 l1 hide-on-small-only">
+                <img src="./../to.jpg" alt="Track Image" style="max-width: 100%">
+            </div>
+
+            <div class="col m3 l3 base-style white-text hide-on-small-only" style="font-weight: bolder; font-size: 20px;">
+                Taylor Swift
+                <br /> WonderLand
+            </div>
+
+            <div class="col s12 m7 l8">
+
+                <div class="row">
+                    <!-- Start of player controls -->
+                    <div class="row base-style white-text contol-buttons" style="font-weight: bolder; font-size: 20px">
+                        <div class="col s2 m2 l2">
+                            <i class="material-icons" id="rndBtn">shuffle</i>
+                        </div>
+                        <div class="col s8 m8 l8" style="text-align: center">
+                            <i class="material-icons" id="backBtn">fast_rewind</i>
+                            <i class="material-icons" id="pauseBtn">pause</i>
+                            <i class="material-icons" id="forwardBtn">fast_forward</i>
+                        </div>
+                        <div class="col s2 m2 l2">
+                            <i class="material-icons" id="shlfBtn">repeat</i>
+                        </div>
+                    </div>
+                    <!-- End of player controls -->
+                </div>
+
+                <!-- Start of timer and scrobbler -->
+                <div class="row base-style hide-on-small-only white-text" style="font-weight: bolder; font-size: 20px; text-align: center">
+                    <div class="col m2 l2">
+                        00:00
+                    </div>
+                    <div class="col m8 l8 range-field">
+                        <input type="range" />
+                    </div>
+                    <div class="col m2 l2">
+                        00:00
+                    </div>
+                </div>
+                <!-- End of timer and scrobbler -->
+
+                <div class="row base-style show-on-small hide-on-med-and-up white-text" style="font-weight: bolder; font-size: 20px; text-align: center">
+                    Taylor Swift
+                    <br /> WonderLand
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Media Player -->
 
     <script>
         $(".brand-logo.left").sideNav();
