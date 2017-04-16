@@ -25,8 +25,14 @@
             overflow: auto;
         }
         
+        nav,
+        nav input {
+            background: linear-gradient(rgb(255, 100, 124), rgb(254, 161, 125));
+            background-repeat: no-repeat;
+        }
+        
         .grad-color {
-            background: linear-gradient(to top, rgb(255, 100, 124), rgb(254, 161, 125));
+            background: linear-gradient(to right, tomato, rgb(254, 161, 125));
             background-repeat: no-repeat;
         }
         
@@ -46,7 +52,7 @@
         /* Start of media player CSS */
         
         #playerHolder {
-            background: linear-gradient(transparent 5%, rgb(255, 100, 124) 95%);
+            background: linear-gradient(transparent, #ff0048, black);
             background-repeat: no-repeat;
             position: fixed;
             bottom: 0;
@@ -96,7 +102,7 @@
                     <a href="#" data-activates="slide-out" class="brand-logo black-text left" style="margin-left: 10px; font-family: 'Great Vibes', cursive; font-weight: bolder">FU</a>
                 </div>
                 <div class="col s8 m8 l8 center">
-                    <form id="searchForm">
+                    <form id="searchForm" class="z-depth-1">
                         <div class="input-field" class="transparent">
                             <input id="searchInput" type="search" class="transparent">
                             <label class="label-icon" for="searchInput"><i class="material-icons black-text">search</i></label>
@@ -106,7 +112,7 @@
 
                 <!-- Start of User Dropdown -->
                 <div class="col m2 l2 center hide-on-med-and-down">
-                    <a href="#" class="dropdown-button btn grad-color" data-activates="userDropdown">User</a>
+                    <a href="#" class="dropdown-button btn grad-color base-style" data-activates="userDropdown" style="font-weight: bold">User</a>
                     <ul id='userDropdown' class='dropdown-content grad-color'>
                         <li><a href="#!" class="white-text base-style">one</a></li>
                         <li><a href="#!" class="white-text base-style">two</a></li>
@@ -121,11 +127,11 @@
     <!-- End of main top nav -->
 
     <!-- Start of side nav -->
-    <ul id="slide-out" class="side-nav grad-color">
-        <li><a href="#!" class="white-text">What's New</a></li>
-        <li><a href="#!" class="white-text">Playlists</a></li>
-        <li><a href="#!" class="white-text">Library</a></li>
-        <li><a href="#!" class="white-text">Discover</a></li>
+    <ul id="slide-out" class="side-nav" style="background: linear-gradient(red, rgb(254, 161, 125))">
+        <li><a href="#!" class="white-text base-style">What's New</a></li>
+        <li><a href="#!" class="white-text base-style">Playlists</a></li>
+        <li><a href="#!" class="white-text base-style">Library</a></li>
+        <li><a href="#!" class="white-text base-style">Discover</a></li>
     </ul>
     <!-- End of side nav -->
 
@@ -373,7 +379,7 @@
                 00:00
             </div>
             <div class="col s8 range-field">
-                <input type="range">
+                <input type="range" />
             </div>
             <div class="col s2">
                 00:00
@@ -452,10 +458,10 @@
         var searchInput = document.getElementById('searchInput');
         var searchForm = document.getElementById('searchForm');
         searchInput.addEventListener('focus', function () {
-            searchForm.className = "z-depth-2";
+            searchForm.className = "z-depth-5";
         });
         searchInput.addEventListener('blur', function () {
-            searchForm.className = "";
+            searchForm.className = "z-depth-1";
         });
     </script>
 </body>
