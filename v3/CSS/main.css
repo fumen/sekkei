@@ -20,10 +20,6 @@ h4{
     padding-top: 50px;
 }
 
-nav,
-nav input {
-    
-}
 nav{
     padding-top: 50px;
     margin-bottom: 50px;
@@ -84,6 +80,24 @@ nav{
 @media only screen and (max-width: 600px) {
     #playerHolder {
         max-height: 200px;
+    }
+}
+
+@media only screen and (min-width: 993px){
+    .add-margin {
+        margin-left: 300px;
+    }
+
+    #playerHolder {
+        width: calc(100% - 300px);
+    }
+
+    .hide-on-size {
+        display: none !important;
+    }
+
+    .show-on-size {
+        display: block !important;
     }
 }
 /* End of media player CSS */
